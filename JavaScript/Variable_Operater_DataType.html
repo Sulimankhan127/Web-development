@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Variable, Operater and DataType</title>
+
+    <!-- Variables in Javascript -->
+    <script>
+        // JavaScript Variables can be declared in 4 ways:
+        /*
+          - Automatically
+          - Using var
+          - Using let
+          - Using const
+          */
+
+        //   Automatically
+        /*They are automatically declared when first used*/
+        x = 2;
+        y = 4;
+        console.log("variable of x+y is", x + y)
+
+        // Using Var 
+        /* Only use 'var' if you MUST support old browsers. 'Var' can be updated and re-declared*/
+        var a = 3;
+        var a = 4;
+        console.log("variable of a is", a)
+
+        // Using let
+        /* 'Let' can be updated but not re-declared*/
+        let b = 3;
+        b = 4;
+        console.log("Let b is " + b)
+
+        // Using const
+        /* 'const' can neither be updated  nor re-declared*/
+        const c = 3;
+        console.log("Let b is " + c)
+    </script>
+
+    <!--  Operaters in JavaScript -->
+    <script>
+        // JavaScript Arithmetic Operators
+        /*Arithmetic Operators like (+ - * % etc) are used to perform arithmetic on numbers:*/
+        let m = 9;
+        let n = 8;
+        let x = m + n;
+        console.log("The value of x is ", x)
+        console.log("The value of m*n is ", m * n)
+        // Here m and n is an operand and + or * is an operater
+
+        // JavaScript Assignment Operators
+        /*The  Assignment Operator like (==,+=,-= etc) adds a value to a variable.*/
+        let d = 5;
+        d += 2;
+        console.log("The value of d is", d)
+
+        // JavaScript Comparison Operators
+        /* The  Comparison Operators like (==,!=, ===,!===, <, > etc) are use.*/
+        let text1 = 9;
+        let text2 = 4;
+        console.log("The result is text1 < text2: ", text1 < text2)
+
+        // JavaScript Logical Operators
+        /* The  Logical Operators like (||, &&, ! etc) are use.*/
+    </script>
+
+    <!-- Data Type -->
+    <script>
+        // A data type like (string, number, boolean, Bigint, undefined, null, symball, object) are primitive type in js.e.g
+        let k = "khan";
+        let j = 123;
+        let v = Symbol("I am khan")
+console.log(k)
+        // An object in js is nan- primitives.e.g
+        const item = {
+            "khan": true,
+            "salman": false,
+            "awis": 78
+        }
+        console.log(item["khan"])
+    </script>
+</head>
+
+<body>
+    <h1>We discus Variable, Operater and DataType in javascript</h1>
+</body>
+
+</html>

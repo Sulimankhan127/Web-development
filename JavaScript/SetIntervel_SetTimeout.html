@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SetIntervel and SetTimeOut</title>
+    <style>
+        #boxTime {
+            height: 40px;
+            width: 50px;
+            border: 2px solid black;
+            background-color: red;
+            margin-bottom: 34px;
+        }
+
+        #boxSize {
+            height: 40px;
+            width: 50px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>The setInterval() Method</h2>
+    <div id="boxTime"></div>
+
+    <div id="boxSize"></div>
+    <button onclick="stopAnimation()">Stop Animation</button>
+
+    <script>
+        console.log("------- setInterval() and clearInterval() method ---------");
+
+        // setInterval() method
+        // The setInterval() method calls a function at specified intervals (in milliseconds, 1000ms=1sec).It calling the function until clearInterval() is called, or the window is closed.
+
+        // setInterval(functionName, millisecond(timer))
+        var a = 0;
+        var id = setInterval(Anim, 1000)
+        function Anim() {
+            a = a + 10;
+            console.log(a); //For console output
+            // If the anim reach to 100 it will stop through the following condition
+            if (a == 100) {
+                clearInterval(id)
+            }
+            else {
+                var target = document.getElementById("boxTime");
+                target.style.marginLeft = a + 'px';
+            }
+        }
+
+        console.log("------- setTimeout() and clearTimeout() method ---------");
+        // setTimeout() method
+         // The setTimeout() method calls a function after a number of milliseconds.
+        var id = setTimeout(Animation, 5000)
+        function Animation() {
+            var target = document.getElementById("boxSize");
+            target.style.width = "500px"
+        }
+
+        // ClearTimeOut()
+        // The animation will increase its width after 5 sec=5000ms, but when we click on butten it will stop increases 
+        function stopAnimation() {
+            clearTimeout(id);
+        }
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alert, Prompt and Confirm</title>
+</head>
+
+<body>
+
+    <script>
+        console.log("-----------Alert -----------");
+        // Alert box
+        // Alert in-bowser does not return anything
+        alert("This is a message !!");
+
+        console.log("-----------Prompt -----------");
+        // Prompt box
+        // A prompt box is often used if you want the user to input a value before entering a page.
+        let name = prompt("What is your name? ", "Khan");  //The string "khan" is a default in prompt
+        // console.log(name);
+
+        if (name == null || name == "") {
+            console.log("User cancelled the prompt.");
+        } else {
+            console.log("Hello " + name + "! How are you today?");
+        }
+
+        console.log("-----------Confirm -----------");
+        // Confirm box
+        // A confirm box is often used if you want the user to verify or accept something.If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.
+        var txt = confirm("Press a button!");
+        if (txt = "OK") {
+            console.log("You pressed OK!");
+        } else {
+            console.log("You pressed Cancel!");
+        }
+
+        // Another example
+        let deletepost = confirm("Do you realy want to delete post?");
+        if (deletepost) {
+            console.log("You have been deleted successfully!");
+        }
+        else {
+            console.log("You have not been deleted the post!");
+        }
+
+    </script>
+
+</body>
+
+</html>

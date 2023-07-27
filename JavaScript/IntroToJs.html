@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introduction to jvascript</title>
+    <!-- Introductio to Javascript -->
+    <!--JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. A very common use of javascript to dynamically modify HTML and CSS to update a user interface via a DOM (Document object model)-->
+
+    <!-- External JavaScript -->
+    <!-- Scripts can also be placed in external file. To use an external script, put the name of the script file in the src (source) attribute of a <script> tag, but external scripts cannot contain <script> tags. You can place an external script link in <head> or <body> as you like. -->
+    <script src="IntroToJs.js"></script>
+
+    <!-- JavaScript in <head> -->
+    <!-- In this example, a JavaScript function is placed in the <head> section of an HTML page.The function is invoked (called) when a button is clicked: -->
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- JavaScript in <body> -->
+    <!-- In this example, a JavaScript function is placed in the <body> section of an HTML page.The function is invoked (called) when a button is clicked: -->
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+
+    <h2>Demo JavaScript in Head and body </h2>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Events and Event listener</title>
+    <style>
+        #btn {
+            border: 2px solid black;
+            background-color: antiquewhite;
+            font-weight: bold;
+            color: black;
+            padding: 12px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is my hiding</h2>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae commodi nulla tempora aspernatur
+        dolorem pariatur officiis amet ipsam repudiandae velit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Culpa, excepturi iure nobis unde numquam quas possimus quidem minima magni quos iusto? Accusamus, natus porro ea
+        ullam magni totam reiciendis illo?</p>
+
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+        // Event
+        // A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+
+        //AddEventListener
+        // Syntax
+        // element.addEventListener(event, function, useCapture);The first parameter is the type of the event (like "click" or "mousedown" or any other HTML DOM Event.) The second parameter is the function we want to call when the event occurs.The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.let para = document.getElementById('para');
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            alert("Mouse inside the paragraph")
+        });
+        para.addEventListener('mouseout', function run() {
+            alert("Mouse outside the paragraph")
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Strings</title>
+</head>
+
+<body>
+    <h3>This is a strings</h3>
+    <!-- Strings  -->
+    <script>
+        // Variable
+        var fname = "salman";
+        console.log(fname.length)
+        var string = "thi's";
+        var lname = "khan";
+        var message = "Khan is a good person";
+        console.log(string + fname + message);
+        console.log("You are a\n good man"); // \n to jump to new line and \t for tab means space 
+
+        // Template Literals
+        // Template Literals use back-ticks (``) rather than the quotes ("") to define a string. emplate literals provide an easy way to interpolate(Izafa) variables and expressions into strings.
+        var temp = `${fname} ${lname} `;
+        var temp = `${fname} ${lname} is a student and ${message} `;
+        console.log(temp);
+    </script>
+
+    <!-- String Methods -->
+    <!-- 
+- String indexOf()
+- String lastIndexOf()
+- String search()
+- String match()
+- String matchAll()
+- String includes()
+- String startsWith()
+- String endsWith() 
+-->
+    <script>
+        // Index methods
+        var str = "Please locate where 'locate' occurs!";
+        // The indexOf() method returns the index (position) the first occurrence of a string in a string.
+        let index = str.indexOf("locate")
+        console.log(str)
+        console.log(index)
+
+        // The lastindexOf() method returns the index (position) the last occurrence of a string in a string.
+        index = str.lastIndexOf("locate")
+        console.log(index);
+        // Both indexOf(), and lastIndexOf() return -1 if the text is not found
+
+         // slice methods
+        // Clice print the string which are given
+        let name = "Salman";
+        console.log(name.slice(2, 4))
+        // cases
+
+        // Concat method
+        // Concat combine the two strings
+        let a = "Khan";
+        let freind = "Anis";
+        console.log(a.concat(" is a friend of ", freind, " Ok!!"))
+
+        // Trim method
+        // Trim remove the space at start and end of the string
+        let b = "       Meena     ";
+        console.log(b)
+        console.log(b.trim())
+
+        // Search methods
+        // The search() method searches a string for a string (or a regular expression) and returns the position of the match.e.g within quotes
+        index = str.search("locate");
+        console.log(index);
+
+        // Match methods
+        // The match() method returns an array containing the results of matching a string against a string (or a regular expression).
+        index = str.match("oc")
+        console.log(index);
+        // or
+        index = str.match(/oc/);
+        console.log(index);
+
+        // Perform a global search for "oc":
+        index = str.match(/oc/g);
+        console.log(index);
+
+        // Replace methods
+        var rep = str.replace("occurs", "Muree");
+        console.log(str)
+        console.log(rep)
+
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+// Etc
+    </script>
+</body>
+
+</html>

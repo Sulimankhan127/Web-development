@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loops</title>
+</head>
+
+<body>
+    <h3>Loops</h3>
+    <script>
+        // For loop
+        for (let i = 0; i < 10; i++) {
+            console.log(i)
+            // To print complete values
+            console.log(i + 1)
+        }
+        
+        // Program to add first n natural number
+        let sum = 0;
+        let n = prompt("Enter the value of n:")
+        n = Number.parseInt(n);
+        for (let j = 0; j < n; j++) {
+            // console.log(j + 1)
+            sum += (j + 1);
+        }
+        console.log("Sum of first " + n + " natural number is :" + sum);
+
+        // While loop
+        // Loops can execute a block of code as long as a specified condition is true.
+        let s = prompt("Enter the value of s:")
+        s = Number.parseInt(s);
+        let i = 0;
+        while (i < s) {
+            console.log(i)
+            i++;
+        }
+
+        // Do While loop
+        //  This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true
+        do {
+            console.log(i)
+            i++;
+        } while (i < s);
+
+        // For-in Loop
+        // The JavaScript for in statement loops through the properties of an Object
+        let obj = {
+            khan: 45,
+            salman: 50,
+            Aness: 60,
+            Ali: 70
+        }
+        for (let a in obj) {
+            console.log("Marks of " + a + " are: " + obj[a])
+        }
+
+        // For-of Loop
+        // The JavaScript for of statement loops through the values of an iterable object.
+        for (let b of "khan") {
+            console.log(b)
+        }
+
+    </script>
+
+</body>
+
+</html>

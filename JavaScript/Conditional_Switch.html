@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conditional Statements</title>
+</head>
+
+<body>
+    <h3>Conditional Statements</h3>
+    <script>
+        // The if Statement
+        // Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+        let age1 = 21;
+        if (age1 > 18) {
+            console.log("You are awesome!")
+        }
+
+        // The else Statement
+        // Use the else statement to specify a block of code to be executed if the condition is false.
+        let age2 = 13;
+        if (age2 > 18) {
+            console.log("You can drive a car!")
+        }
+        else {
+            console.log("You can not drive a car!")
+        }
+
+        // The else if Statement
+        // Use the else if statement to specify a new condition if the first condition is false.
+        let marks = 98;
+        if (marks > 50) {
+            console.log("You are pass!")
+        }
+        else if (marks > 50) {
+            console.log("You are fail!")
+        }
+        //Can add more conditions
+        else {
+            console.log("You promote to 11th class!")
+        }
+
+        // Switch statement
+        // The switch statement is used to perform different actions based on different conditions. Use the switch statement to select one of many code blocks to be executed.
+        const age = 18;
+        switch (age) {
+            case 12:
+                console.log("Your age is 12")
+                break;
+
+            case 15:
+                console.log("Your age is 15")
+                break;
+            case 18:
+                console.log("Your age is 18")
+                break;
+            case 20:
+                console.log("Your age is 20")
+                break;
+            default:
+                console.log("Your age is invalid")
+                break;
+        }
+    </script>
+
+</body>
+
+</html>

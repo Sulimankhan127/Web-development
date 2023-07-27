@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arrays and Objects</title>
+</head>
+
+<body>
+    <h3>Arrays and objects</h3>
+    <script>
+        console.log("-------------- Arrays ------------------");
+
+        // Arrays 
+        // An array can hold many values under a single name
+        const marks = [50, 70, 75, "Khan"]
+        console.log(marks)
+        // we can access the values by referring to an index number.
+        console.log(marks[0])
+        console.log(marks[1])
+        console.log(marks[2])
+        // Length of the array
+        console.log("The length of the arrays are: " + marks.length)
+
+        // JavaScript Array Iteration
+        let numbers = [1, 2, 4, 6, 3, 8];
+        for (let m = 0; m < numbers.length; m++) {
+            console.log(numbers[m]);
+        }
+        console.log("--------------------");
+
+        // Array forEach() 
+        // The forEach() method executes a provided function once for each array element.
+        numbers.forEach((element) => {
+            console.log(element * element);
+        });
+        console.log("--------------------");
+
+        // ForEach() 2
+        const array1 = ['a', 'b', 'c'];
+        array1.forEach(element => console.log(element));
+
+        // Array map()
+        // The map() method creates a new array by performing a function on each array element.It does not change the original array.
+        const numbers1 = [45, 4, 9, 16, 25];
+        const numbers2 = numbers1.map(myFunction);
+        function myFunction(value) {
+            return value * 2;
+        }
+        console.log("The map arrays is: ",numbers2);
+
+        //Array Filter()
+        // The filter() method creates a new array with array elements that pass a test.
+        let arr=numbers1.filter((o)=>{
+            return o<10;
+        });
+        console.log("The filter array is:",arr);
+
+        //Array reduce()
+        // reduce() method runs a function on each array element to produce (reduce it to) a single value.it works from left-to-right in the array.
+       let q=[1,2,3,4,5]
+        let arr2=q.reduce((h1, h2)=>{
+            // It work like (1+2=3, 3+3=6, 6+4=10, 10+5=15)
+            return h1+h2;
+        });
+        console.log("The reduce array is:",arr2);
+
+
+        console.log("-------------- Arrays Methods ------------------");
+
+        //Arrays Methods
+        const fruits = ["Banana", "Orange", "Apple", "Mango", 127];
+        console.log(fruits)
+        let size = fruits.length;
+        console.log("The size of fruits arrays is: ", size)
+
+        // toString() method
+        // The JavaScript method toString() converts an array to a string of (comma separated) array values.
+        let a = fruits.toString();
+        console.log("Arrays in string form like: ", a)
+
+        // Join method
+        let b = fruits.join(" and ")
+        console.log("Join the elements in sentance form like: ", b)
+
+        // pop method
+        // The pop() method removes the last element from an array
+        let c = fruits.pop()
+        console.log("pop the last value of arrary: ", fruits, "pop value are:", c)
+
+        let d = fruits.push("Anans")
+        console.log("Push the value to the array: ", fruits, d)
+
+        // Shift method
+        // Shifting is equivalent to popping, but working on the first element instead of the last
+        let e = fruits.shift()
+        console.log("Remove the first elemnet:", fruits, "Remove value is:", e)
+
+        // Unshift method
+        // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+        let f = fruits.unshift(" Akhrot ")
+        console.log("Add the new element in array :", fruits, f)
+
+        // Splice method
+        // you can use splice() to remove elements without leaving "holes" in the array:
+        let g = fruits.splice(0, 1)
+        console.log("To remove element :", fruits, g)
+
+        // Flat method
+        // The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+        let age = [[12, 34], [34, 56], [78, 90]]
+        let New_age = age.flat();
+        console.log("The new arrary of sub array is: :", New_age)
+
+        // Concat method
+        // The concat() method creates a new array by merging (concatenating) existing arrays(e.g with fruist)
+        let num = [123, 345, 678, 890]
+        let h = fruits.concat(num)
+        console.log("Merrging two arrays:", h)
+
+        // Sort method
+        // Sort make the array in ascending or decending order
+        let compare = (a, b) => {
+            // ascending order
+            // return b - a
+
+            // Dscending order
+            return a - b
+        }
+        let num1 = [123, 345, 678, 890, 23, 567, 8];
+        num1.sort(compare);
+        console.log("Ascending order of array", num1);
+
+        // Reverse method
+        let k = num1.reverse()
+        console.log("Array in reverse order", k);
+
+        // Splice and Slice method
+        let l = num1.splice(2, 3, 234, 235, 567, 355)
+        // 2 for index, 3 to remove the element next to 2, and next value add to the array
+        console.log("The array is: ", l);
+
+        // Add new value to the index in arrays
+        num1[4] = 65;
+        // Changing the value of existing index in arrays
+        num1[2] = 95;
+        console.log("The new arrays is:  ", num1)
+    </script>
+
+    <script>
+        console.log("-------------- Objects ------------------");
+        // Objects
+        // It is a common practice to declare objects with the const keyword.
+        let empolyee = {
+            Khan: 127,
+            Anis: 143,
+            Huzaifa: 119,
+            name: "Salman"
+        }
+        console.log(empolyee)
+        // To print a sigle value
+        console.log(empolyee.Anis)
+
+        //In real life, a car is an object. A car has properties like weight and color, and methods like start and stop.
+        const car = { type: "Fiat", model: 500, color: "white" };
+        console.log(car)
+
+        // this keyword
+        // In JavaScript, the this keyword refers to an object.Which object depends on how this is being invoked (used or called).
+        const person = {
+            firstName: "Salman",
+            lastName: "Khan",
+            id: 127,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        console.log(person)
+        console.log(person.fullName())
+    </script>
+
+</body>
+
+</html>
