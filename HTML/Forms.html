@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Forms </title>
+</head>
+
+<body>
+    <h2>This is HTML Forms!!</h2>
+    <form action="backend.js">
+        <!-- submit form's data in backend language like in JS(java.script) we can write <form> for strt form -->
+
+        <fieldset> <!--The <fieldset> element is used to group related data in a form and make a boundery of form-->
+            <br>
+            <div> <!-- it is used for division just be like <br> to break the line-->
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="Myname">
+                <!--when the user clicks the text within the <label> element e.g(Name), directly goes to box like radio, button/checkbox.-->
+                <label for="lname">Last name</label>
+                <input type="tex" id="lname" name="Myname"> <!-- id is the unique identity in which put "for valus" -->
+                <!--e.g "Myname" is used to take corresponding values from bakend language-->
+            </div>
+            <br>
+            <div>
+                <label for="Father">Father name:</label>
+                <input type="text" id="Father" name="Fathername">
+            </div>
+            <br>
+            <div>
+                <label for="Role">Designation:</label>
+                <input type="text" id="Role" name="Myrole">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Myemail">
+            </div>
+            <br>
+            <div>
+                <label for="date"> Date of birth:</label>
+                <input type="Date" id="date" name="Mydate">
+            </div>
+            <br>
+            <div>
+                <label for="Bonus"> Bouns:</label>
+                <input type="number" id="bouns" name="Mybonus">
+            </div>
+            <br>
+            <div>
+                Are you eligible?: <input type="checkbox" name="MyEligibility">
+            </div>
+            <br>
+            <div>
+                <label for="Gender"> Gender: </label>
+                <label for="Male">Male</label>
+                <input type="radio" id="Male" name="Mygender">
+                <!-- We can label female and other as well as male-->
+                Female <input type="radio" name="Mygender"> Other <input type="radio" name="Mygender">
+            </div>
+            <br>
+
+            <div>
+                Write about yourself: <br> <textarea name="mytxt" id="" cols="60" rows="10"></textarea>
+                <!-- cols use for the columns area, and rows for the area of row to increase/decrease-->
+            </div>
+            <br>
+            <div>
+                <label for="cars">Chose a car:</label>
+                <select name="Mycar" id="cars"> <!--The <select> element defines a drop-down list to select any one-->
+                    <option value="Vigue">Vigue</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Civic">Civic</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <!--The <datalist> element specifies a list of pre-defined options for an <input> element.
+                    Users will see a drop-down list of the pre-defined options-->
+                <label for="Students">Choose one student!</label>
+                <input list="Students">
+                <datalist id="Students">
+                    <option value="Salman"></option>
+                    <option value="Anees"></option>
+                    <option value="Ali"></option>
+                    <option value="Tahir"></option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+            <br>
+            <div>
+                <button type="button" onclick="alert('Are you sure?')"> Cancel</button>
+                <!-- onclick="alerst('')" is use to write the sentance inside the button which will be show once you click on butten-->
+            </div>
+            <br>
+        </fieldset>
+        <br>
+    </form>
+</body>
+
+</html>
