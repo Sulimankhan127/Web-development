@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> CV </title>
+    <!-- The following links are used to provide icon from different website -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 0px;
+            margin: 32px auto;
+            width: 662px;
+            height: 900px;
+        }
+
+        .page1 {
+            /* border: 2px solid black; */
+            background-color: pink;
+            width: 407px;
+            height: 897px;
+            float: right;
+            padding: 27px;
+            margin: -1px;
+            margin-top: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+
+        h1 {
+            /* This is used in page 1 */
+            border: 2px solid black;
+            background-color: yellow;
+            position: relative;
+            left: -28px;
+            top: 12px;
+            padding: 25px;
+            /* margin: -42px; */
+            width: 409px;
+            height: 149px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+
+        }
+
+        /* This block is used to set the lines at page1 */
+        hr.page1_1 {
+            border-top: 2px solid black;
+        }
+
+        /* It is used inside in page1 */
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .profile {
+            color: white;
+            border: 2px solid black;
+            background-color: black;
+            width: 253px;
+            height: 899px;
+            float: left;
+            padding: 12px;
+            margin: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+
+        img {
+            border: 2px solid white;
+            border-radius: 100px;
+            /* Border radus is used for the image to set it in circle form */
+            width: 190px;
+            height: 200px;
+            padding: 0px;
+            margin: 23px 16px;
+        }
+
+
+        hr {
+            /* This block is used to set the lines (<hr> tag) at profile */
+            border-top: 2px solid rgb(232, 232, 12);
+            margin-top: -7px;
+            margin-bottom: 20px;
+            padding: 0px;
+        }
+
+
+        /* Writing Mode, used inside a block of Eduction */
+        .profile em {
+            writing-mode: vertical-rl;
+            /* Writing mode is used to change the mood of text. */
+            font-size: 19px;
+            font-weight: bold;
+            border-right: 5px solid red;
+            /* Border right/left is used to create vartical line */
+            height: 50px;
+        }
+
+        /* It is used inside in profile */
+        .profile h5 {
+            position: relative;
+            top: -62px;
+            right: -36px;
+            font-size: 17px;
+        }
+
+        /* It is used inside in profile */
+        span {
+            font-size: small;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page1">
+            <h1> SALMAN KHAN<br><span style="font-size: 25px; font-style: italic; font-weight: normal;">
+                    Software Engineer</span>
+            </h1>
+            <br>
+            <br>
+            <div>
+                <h3>PROFESSIONAL PROFILE</h3>
+                <hr class="page1_1">
+                <p>I am a professional developer living in gujrat, Pakistan. I am working as a softawre Engineer. I also
+                    work on design.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h3>PROGRAMMING LANGUAGES</h3>
+                <hr class="page1_1">
+                <p> Following are the list of programming language:</p>
+                <ul type="square">
+                    <li> C++</li>
+                    <li> Java </li>
+                    <li> Python</li>
+                    <li> SQL</li>
+                    <li> Java script</li>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <h3>SKILLS</h3>
+                <hr class="page1_1">
+                <p> As a student i have some basic skills:</p>
+                <ul type="square">
+                    <li> Developer</li>
+                    <li> Programmer </li>
+                    <li> Photographer</li>
+                    <li> Editer</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="Mine.jpg" alt="loeading">
+            <div>
+                <h3> CONTACT <i class="glyphicon glyphicon-user" style="float: right;"></i></h3>
+                <hr>
+                <span>
+                    <i class="material-icons" style="font-size: medium;">call </i> &nbsp;&nbsp;+923109958558<br>
+                    <i class="material-icons" style="font-size: medium;">mail</i>&nbsp;&nbsp;962.ga37@gmail<br>
+                    <i class="material-icons" style="font-size: medium;">place</i>&nbsp;&nbsp; University of gujrat
+                    |PAK<br>
+                    <i class="material-symbols-outlined" style="font-size: medium;">language</i>
+                    &nbsp;&nbsp;www.uog.edu.pk<br>
+                </span>
+                <br>
+                <hr>
+            </div>
+
+            <div>
+                <h3> EDUCTION <i class="glyphicon glyphicon-education " style="float:right"></i></h3>
+                <hr>
+                <em>2020</em>
+                <h5>Intermediate | Army <br> College | Attock</h5>
+                <!--Here <br> tag is used to break thew line to next lline -->
+                <hr>
+                <em>2024</em>
+                <h5>BS Software Engineering <br>| University of Gujrat | Pak</h5>
+                <hr>
+            </div>
+            <div>
+                <h3> LANGUAGE <i class="fa fa-cog" style="float: right;"></i></h3>
+                <hr>
+                <ul type="square">
+                    <li> Pashto</li>
+                    <li> English </li>
+                    <li> Urdu</li>
+                    <li> Punjabi</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
