@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selector</title>
+</head>
+<!--CSS selectors are used to "find" (or select) the HTML elements you want to style. -->
+
+<!-- Internal CSS style Sheet -->
+<style>
+    /* Element selector */
+    /* The element selector selects HTML elements based on the element name.  */
+    p {
+        text-align: left;
+        color: blue;
+    }
+
+    /* Id Selector */
+    /* The id selector uses the id attribute of an HTML element to select a specific element. */
+    #para {
+        text-align: center;
+        color: red;
+    }
+
+    /* Class selector */
+    /* The class selector selects HTML elements with a specific class attribute. */
+    .play {
+        text-align: right;
+        color: black;
+    }
+
+    /* Descendant selector */
+    /* This selector target to the element that are descendant(child element) of another element */
+    ul li {
+        font-size: 2px;
+    }
+
+    .rong {
+        background-color: chocolate;
+    }
+
+    h2.doon {
+        /* In this example only <h2> elements with class="doon" will be blue and yello background  */
+        color: blue;
+        background-color: yellow;
+    }
+
+    /* Group selector */
+    /* The grouping selector selects all the HTML elements with the same style definitions.for example(h1,p,h3),
+     when all this HTML elements have the same style, then it will be better to group the selector. */
+
+    /* Not Group selector */
+    h1 {
+        text-align: center;
+        color: red;
+    }
+
+    h2 {
+        text-align: center;
+        color: red;
+    }
+
+    p {
+        text-align: center;
+        color: red;
+    }
+
+    /* Group Selctor */
+    h1,
+    h2,
+    p {
+        text-align: center;
+        color: red;
+    }
+
+    /* Universal Selector */
+    /* The universal selector (*) selects all HTML elements on the page. */
+    * {
+        color: blue;
+        text-align: center;
+    }
+
+    /* If p is right inside div then this CSS will applied */
+    div>p {
+        background-color: aquamarine;
+        font-size: large;
+    }
+
+    /* If p is right after the div i.e. p is the next siblings of div, then this CSS will applied */
+    div+p {
+        background-color: burlywood;
+        font-size: 42px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>I am a paragraph</p>
+                </li>
+            </ul>
+        </div>
+        <p>Hello khan, look me here.</p>
+    </div>
+    <p>Hello Ali, are you ready to play footbal? </p>
+    <p id="para">Hello Ali, are you ready to play footbal? </p>
+    <p class="play rong">Hello Ali, are you ready to play footbal? </p> <!-- There are 2 classes play and rong-->
+    <h2 class="doon">Hello Usman, are you ready?</h2>
+    <h3 class="doon">Hello Usman, are you ready?</h3>
+</body>
+
+</html>

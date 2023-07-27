@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Color in CSS</title>
+    <style>
+        /* Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. */
+
+        #para {
+            color: blue;
+            /* Color by name*/
+        }
+
+        #RGBColor {
+            /*CSS RGB Color */
+
+            /*RGB represent (Red,Green,Blue) colors.For Example, rgb(255, 0, 0) is displayed as red, 
+           because red is set to its highest value (255) and the others are set to 0.
+           We can set this color by clicking on number/ values like on (9, 255, 0)..*/
+           color: rgb(red, green, blue);
+            color: rgb(255, 0, 0)
+        }
+
+        #HEXColor {
+            /*CSS HEX Color */
+
+            /* A HEX (hexadecimal) color is specified with: #RRGGBB, where the RR (red), GG (green) and 
+            BB (blue) hexadecimal integers specify the components of the color. */
+            
+            color: #ff0000;
+            /* For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and
+            the others are set to the lowest value (00).*/
+
+            color: #f00;
+            /* #rgb Sometimes you will see a 3-digit hex code in the CSS source,
+             and it is a shortand of 6 digits code like(#f00) for red color */
+
+        }
+
+        #HSLColor {
+            /* CSS HSL Color */
+            /* HSL stands for hue(is a degree) from 0 to 360, saturation( is a percent %), 
+            and lightness( is also a percent %) . */
+            color: hsl(hue, saturation, lightness);
+            color: hsl(240, 100%, 50%);
+        }
+
+        #RGBAColor{
+            /*CSS RGBA Color */
+
+            /* The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at al */
+            color: rgb(255, 0, 0, 0.5)
+        }
+
+        #HSLAColor {
+            /*CSS HSLA Color */
+
+            /* HSLA color values are an extension of HSL color values with an alpha channel,
+             which specifies the opacity for a color. */
+            color: hsla(9, 100%, 64%, 1)
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is my first box</h2>
+    <p id="RGBColor">This is a RGBColor  box</p>
+
+    <h2>This is my second box</h2>
+    <p id="HEXColor">This is a HEXColor</p>
+
+    <h2>This is my third box</h2>
+    <p id="HSLColor">This is a HSLColor</p>
+
+    <h2>This is my third box</h2>
+    <p id="RGBAColor">This is a RGBAColor</p>
+
+    <h2>This is my third box</h2>
+    <p id="HSLAColor">This is a HSLAColor</p>
+
+    <h2>This is my third box</h2>
+    <p id="para">This is a paragrph </p>
+</body>
+
+</html>

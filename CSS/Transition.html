@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating transition</title>
+    <style>
+        .container{
+            background-color: bisque;
+            width: 600px;
+            height: 500px;
+        }
+        .box{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Transitions: Transitions enable you to define the transition between two states of an element. */
+
+            /* Specifies the name of the CSS property the transition effect is for */
+            transition-property: background-color;
+
+            /* Specifies how many seconds or milliseconds a transition effect takes to complete */
+            transition-duration: 2s;
+
+            /* Specifies the speed curve of the transition effect. */
+            transition-timing-function: ease-in;
+
+            /* Specifies a delay (in seconds) for the transition effect. */
+            transition-delay: 1s;
+
+            /* "Transation short" hand property in one line */
+            /* transition: background-color 2s ease-in 1s; */
+        }
+    .box:hover{
+        background-color: green;
+        width: 400px;
+        height: 300px;
+        border-radius: 100px;
+        font-size: 23px;
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box!!
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Media Queries</title>
+    <style>
+        /*Media Queries */
+        /* Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width. Media queries are used for the following: */
+        .box {
+            background-color: bisque;
+            text-align: center;
+            font-size: 50px;
+            display: none;
+        }
+
+        @media (max-width: 300px) {
+            #box-1 {
+                display: block;
+                background-color: blue;
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 600px) {
+            #box-2 {
+                display: block;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 800px) {
+            #box-3 {
+                display: block;
+                background-color: green;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            #box-4 {
+                display: block;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">I am Iphone</div>
+    <div class="box" id="box-2">I am Tablet</div>
+    <div class="box" id="box-3">I am Computer</div>
+    <div class="box" id="box-4">I am widescreen computer</div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Before and after Pesudo code selector</title>
+    <style>
+        body {
+            background-color: bisque;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            /* background: url(car.webp) no-repeat center center/cover; */
+            /* background-repeat: no-repeat;
+            background-size: cover; */
+        }
+
+        section {
+            border: 2px solid red;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin: 12px 129px;
+
+        }
+
+        header::before {
+            content: "";
+            background: url(car.webp) no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* Top/left= 0 remove the space outside the bod.  */
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /*Z-index is used, when overlap take place due tp position, so it specify the order to place element "in front" */
+
+            /* opacity: 0.5; */
+            /* Opacity is used to light the image. e.i to blur image etc. But here we can't used it */
+
+        }
+
+        /* The ::before selector inserts something before the content of each selected element */
+        section::before {
+            content: "This is a contant";
+            font-size: 30px;
+        }
+
+        p {
+            text-align: center;
+            margin: 12px;
+            padding: 12px;
+        }
+
+        /* The ::after selector inserts something after the content of each selected element */
+        p::after {
+            content: "-End paragraph";
+            font-size: 35px;
+        }
+
+        /* The ::first-letter selector is used to add a style to the first letter of the specified selector. Same for" ::last-latter "*/
+        h4::first-letter {
+            font-size: 23px;
+            color: blue;
+        }
+
+        /* The ::first-line selector is used to add a style to the first line of the specified selector. */
+        p::first-line {
+            background-color: yellow;
+            color: black;
+        }
+
+        /* The ::marker selector selects the marker of a list item. */
+        ::marker {
+            color: red;
+        }
+
+        .navigation {
+            font-size: 23px;
+            display: flex;
+
+        }
+
+        li {
+            /* list-style: none; */
+            /* To remove list type*/
+            padding: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to coding world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iste reprehenderit
+            voluptate inventore
+            eaque quasi provident natus delectus. Porro quas accusantium illo fugiat quis animi ducimus commodi
+            autem at consequuntur?</p>
+        <hr>
+        <div>
+            <h4>I am khan</h4>
+            <h4>From fata</h4>
+            <h4>Study at uog</h4>
+        </div>
+    </section>
+</body>
+
+</html>

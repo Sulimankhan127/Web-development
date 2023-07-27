@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Grid</title>
+    <style>
+        /* The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning. */
+        .grid-container {
+            /* display: grid; */
+            display: inline-grid;
+
+            /* We use grid-template-columns and grid-template-rows. We have specified a specific width or height to our columns and rows, or we have used the keyword auto. The vertical lines of grid items are called columns. */
+            /* grid-template-columns: 100px 200px 300px; */
+            grid-template-columns: auto 200px auto auto;
+            /* You can set as the number of colomen you want by puting. e.g. auto or 100px etc */
+
+            /* As value of fr(friction) show that how much time you want increase their weidth. e.g. 3fr means 4 time of first 1fr and vice versa*/
+            grid-template-columns: 1fr 3fr 2fr;
+
+            /* It will keep the friction(fr) same of remaining rows */
+            grid-auto-rows: 2fr;
+
+            /* We use repeat() when we want the rows or columns of the same height or width. We simply use repeat to save time and give the size(px or keep it auto) */
+            grid-template-columns: repeat(3, 100px);
+
+            /* It create the gap between box */
+            grid-gap: 2rem;
+        }
+
+        .grid-item {
+            border: 2px solid black;
+            background-color: bisque;
+            margin: 4px;
+        }
+
+        .container2 {
+            display: grid;
+            /* display: inline-grid; */
+
+           /* We use grid-template-columns and grid-template-rows. We have specified a specific width or height to our columns and rows, or we have used the keyword auto. The horizintal lines of grid items are called row. */
+            /* grid-template-rows: 100px 200px 300px; */
+            grid-template-rows: 100px auto auto auto;
+
+            
+            /* As value of fr(friction) show how much time rows increase their weidth. e.g. 4fr means 4 time of first 1fr and vice versa */
+            grid-template-rows: 1fr 4fr 2fr 2fr;
+            /* It will keep the friction(fr) same of remaining rows */
+            grid-auto-rows: 2fr;
+
+            /* We use repeat() when we want the rows or columns of the same height or width. We simply use repeat to save time and give the size(px or keep it auto) */
+            grid-template-rows: repeat(3, auto);
+
+            /* It create the gap between box */
+            grid-gap: 2rem;
+
+
+        }
+
+        .grid-item-row {
+            border: 2px solid black;
+            background-color: cadetblue;
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">This is a box-1</div>
+        <div class="grid-item">This is a box-2</div>
+        <div class="grid-item">This is a box-3</div>
+        <div class="grid-item">This is a box-4</div>
+        <div class="grid-item">This is a box-5</div>
+        <div class="grid-item">This is a box-6</div>
+        <div class="grid-item">This is a box-7</div>
+        <div class="grid-item">This is a box-8</div>
+        <div class="grid-item">This is a box-9</div>
+    </div>
+    <div class="container2">
+        <div class="grid-item-row">This is a box-1 for row</div>
+        <div class="grid-item-row">This is a box-2 for row</div>
+        <div class="grid-item-row">This is a box-3 for row</div>
+        <div class="grid-item-row">This is a box-4 for row</div>
+        <div class="grid-item-row">This is a box-5 for row</div>
+        <div class="grid-item-row">This is a box-6 for row</div>
+        <div class="grid-item-row">This is a box-7 for row</div>
+        <div class="grid-item-row">This is a box-8 for row</div>
+        <div class="grid-item-row">This is a box-9 for row</div>
+    </div>
+</body>
+
+</html>

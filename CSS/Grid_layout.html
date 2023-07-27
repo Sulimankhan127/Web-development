@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 8px;
+            grid-template-areas:
+                'header header header header'
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: bisque;
+            padding: 23px 24px;
+        }
+
+        /* A header is usually located at the top of the website (or right below a top navigation menu). It contains a logo or the website name: */
+        #header {
+            grid-area: header;
+        }
+
+        /* A navigation bar contains a list of links to help visitors navigating through your website. */
+        #navbar {
+            grid-area: navbar;
+        }
+
+        /* The section tag defines a section in a document. It is used in middle of the layout */
+        #section {
+            grid-area: section;
+        }
+
+        /* The aside content is often placed as a sidebar in a document. It is used on the side of layout. */
+        #aside {
+            grid-area: aside;
+        }
+
+        /* The footer is placed at the bottom of your page. It often contains information like copyright and contact info */
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="header">
+            This is a header!!
+        </div>
+        <div class="item" id="navbar">
+            This is a navigation!
+        </div>
+        <div class="item" id="section">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti modi possimus id veniam saepe explicabo
+            harum assumenda quasi, ex nam autem est eos maiores ullam eveniet suscipit exercitationem quod ut rem dicta
+            laborum sequi accusantium, culpa vero? Animi, soluta quos. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iure consequuntur magnam reprehenderit eos ullam dolor aut ipsum voluptates, explicabo
+            harum qui praesentium maiores fugit eveniet laudantium nostrum quaerat facere fuga, veritatis architecto
+            quas autem ut officia! Asperiores ullam iure ratione eligendi aut. Consequuntur nulla alias itaque facilis
+            voluptas, sint animi eum vitae perferendis doloribus delectus voluptates. Ipsum earum architecto illo, atque
+            excepturi inventore, odio sit debitis dolores impedit quo voluptates cum blanditiis laboriosam qui nihil
+            ullam eligendi nam totam, nostrum quaerat? Quibusdam sequi id nulla architecto non sint deserunt libero
+            labore vero cum eaque quo magnam cumque ab soluta mollitia perspiciatis enim ut, ea ipsam perferendis! Quos
+            assumenda minima ipsam, aperiam odio blanditiis doloremque quaerat reprehenderit, dolorum ad ut deleniti
+            earum ducimus cupiditate tempora harum, voluptatum laudantium minus. Ex molestias magnam vero. Vel pariatur
+            at assumenda aliquid tempore id? Libero porro distinctio aut cupiditate dolore impedit cum odio, rerum
+            dolorem dicta explicabo suscipit molestias saepe ipsam eos autem vel eligendi quisquam nulla non nisi ea
+            reprehenderit excepturi nihil? Maxime repellat iste temporibus dolorem, dicta assumenda, blanditiis soluta
+            asperiores vero cum consectetur dolorum quaerat praesentium. Velit earum provident dicta consequuntur non, a
+            facere eos? Deleniti, nulla consequatur modi consectetur ut cum.
+        </div>
+        <div class="item" id="aside">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit aperiam voluptatem nihil corrupti laboriosam
+            ducimus, facere, velit ipsa, doloremque commodi officiis cumque itaque rem at delectus rerum aut. Corrupti,
+            iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus totam est rerum, excepturi eius
+            officiis pariatur a assumenda dicta quas rem? Voluptas eos consequuntur rem nemo esse temporibus, possimus
+            delectus accusamus praesentium minima veniam architecto eum facilis, quia est iste eligendi? Illo facilis in
+            hic accusamus non, officia deserunt commodi necessitatibus labore adipisci dignissimos numquam, quod
+            molestias! Ad cum veniam, fuga voluptate eum dicta in veritatis ex consectetur quo possimus, minus similique
+            reprehenderit culpa dolorem sint dolorum natus nisi, eius illo aspernatur saepe non consequuntur? Nostrum,
+            tempore! Consequuntur, aspernatur quibusdam nihil temporibus quas ad excepturi aliquam beatae eos dolores
+            voluptates?
+        </div>
+        <div class="item" id="footer">
+            This is a footer!!
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Variable in CSS</title>
+    <style>
+        /* Global variable */
+        :root {
+            --global-color: red;
+            --font-size: 25px;
+        }
+
+        .container {
+            display: flex;
+
+            /* Global varible use below */
+            background-color: var(--global-color);
+            font-size: var(--font-size);
+
+        }
+
+        .box {
+            /* local varibale */
+
+            /* By creating variable you can design different element with same color, font size etc through call "var()", instead of using them again and again. */
+            --box-color: green;
+            border: 4px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 12px;
+            padding: 12px;
+            /* background-color: blue; */
+            background-color: var(--box-color);
+            box-shadow: 18px 18px var(--box-color);
+
+            /* Global varible use below */
+            background-color: var(--global-color);
+            font-size: var(--font-size);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Float and Clear Layout</title>
+    <style>
+        /* CSS Float and Clear layout */
+
+        .container {
+            /* Containter the class of whole  */
+            border: 8px solid black;
+            width: 677px;
+            margin: 50px auto;
+
+        }
+
+        h1 {
+            /* It is use for h1 heading */
+            width: 400px;
+            margin: auto;
+        }
+
+        .item {
+            /* All three dive will set same as we create their class same e.g item */
+
+            border: 3px solid rgb(221, 18, 18);
+            /* Cick on color then set the color which you want */
+            padding: 12px 3px;
+            /*12px on y and 13px on x axis*/
+            margin: 12px 3px;
+            background-color: beige;
+        }
+
+        #Printing {
+            width: 46%;
+            float: left;
+            /* The float property is used for positioning and formatting content */
+        }
+
+        #Computer {
+            width: 46%;
+            float: right;
+
+        }
+
+        #Stationary {
+            width: 97%;
+            clear: left;
+            /* Stationary Overlap with other box without clear, andclear the side which are overlap. */
+        }
+
+        img {
+            /* Below example specified that image should float to the right in a text */
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my Store!</h1>
+
+        <div id="Printing" class="item">
+            <h3>Printing:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo cum assumenda quia, consectetur, ab,
+                dolores eaque debitis autem dolor incidunt facere doloribus atque ipsam. Ratione earum animi velit sequi
+                nobis?</p>
+        </div>
+
+        <div id="Computer" class="item">
+            <h3>Computer:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo cum assumenda quia, consectetur, ab,
+                dolores eaque debitis autem dolor incidunt facere doloribus atque ipsam. Ratione earum animi velit sequi
+                nobis?</p>
+        </div>
+
+        <div id="Stationary" class="item">
+            <h3>Stationar:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo cum assumenda quia, consectetur, ab,
+                dolores eaque debitis autem dolor incidunt facere doloribus atque ipsam. Ratione earum animi velit sequi
+                nobis? </p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Picture</h2>
+        <p>In this example, the image will float to the image</p>
+        <p><img src="Montain.jfif" alt="Khan"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+            itaqueat aut iusto quia natus qui sit! Doloribus, aut! Itaque sed vel, commodi dolore culpa maxime
+            perferendis laborum beatae aspernatur.</p>
+    </div>
+</body>
+
+</html>

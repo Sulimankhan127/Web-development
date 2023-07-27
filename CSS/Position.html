@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Position: Statics, Relative, Absolute, Fixed, Sticky</title>
+    <style>
+        /* CSS Position */
+        /* Once you select a position then you can position it to top, right, buttom, and left */
+        .Container {
+            border: 2px solid black;
+            background-color: bisque;
+            height: 800px;
+        }
+
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 120px;
+            margin: 3px;
+            display: inline-block;
+        }
+
+        #box1 {
+            /* Static position:An element always positioned according to the normal flow of the page */
+            position: static;
+        }
+
+        #box2 {
+            /* Relative position: An element with 'relative position', is positioned relative to its normal position (mtlb jaha ye box hu s jaga se ye apna position change krta he). */
+            position: relative;
+            top: 30px;
+            left: 6px;
+
+        }
+
+        #box3 {
+            /* Absolute position: An element with 'absolute position', is positioned relative to its parent position (Mtlb start corner se ye apna position change krta he) */
+            position: absolute;
+            top: 30px;
+            left: 50px;
+        }
+
+        #box4 {
+            /* Fixed position: An element with 'fixed position', is  always stays in the same place even if the page is scrolled. */
+            position: fixed;
+            right: 70px;
+        }
+
+        #box5 {
+            /* Sticky position: An element with 'sticky position' is positioned based on the user's scroll position. It stay on top when you scroll a page. */
+            position: sticky;
+            top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+    </div>
+</body>
+
+</html>

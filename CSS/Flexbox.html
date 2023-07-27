@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Layout</title>
+</head>
+<style>
+    /* CSS Flex box layout */
+    /* The Flexible Box Layout Module, makes it easier to design flexible(jo satuation k sath apne apko adjust kr de) responsive layout structure without using float or positioning. */
+
+    .container {
+        /* Flexbox container */
+        /* To start using the Flexbox model, you need to first define a flex container. Initialize the container as a flex  */
+        border: 2px solid black;
+        width: 100%;
+        height: 500px;
+        display: flex;
+
+        /* Flex Properties for flex Container */
+
+        /* The "flex-direction" property defines in which direction the container wants to stack the flex items. */
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse;  */
+
+        /* The "flex-wrap(Lapitna)" property specifies whether the flex items should wrap or not. */
+        /* flex-wrap: nowrap; */
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+
+        /* The "flex-flow" property is a shorthand property for setting both the flex-direction and flex-wrap properties*/
+        /* flex-flow: row wrap; */
+
+        /* The "justify-content" will justify the content in horizantal direction */
+        /* justify-content: center;              aligns the flex items at the center of the container */
+        /* justify-content: flex-start;         aligns the flex items at the beginning of the container*/
+        /* justify-content: flex-end;          aligns the flex items at the end of the container*/
+        /* justify-content: space-between;    displays the flex items with space between the lines*/
+        /* justify-content: space-evenly;    displays the flex items with same space between items */
+        /* justify-content: space-around;   displays the flex items with space before, between, and after the lines */
+
+        /* The "align-item" will justify the content in vortical direction */
+        /* align-items: center; */
+        /* aligns the flex items in the middle of the container*/
+        /* align-items: start;          aligns the flex items in the start of the container */
+        /* align-items: end;           aligns the flex items in the end of the container */
+        /* align-items: stretch;     the flex items to fill the container (this is default) */
+    }
+
+    .item {
+        border: 2px solid red;
+        background-color: burlywood;
+        width: 200px;
+        height: 200px;
+        margin: 6px;
+        padding: 4px;
+    }
+
+    /* Flex Properties for flex Items */
+    #item-1 {
+        /* The order property specifies the order of the flex items.Higher the order, Later show up in the container */
+        order: 2;
+    }
+
+    #item-2 {
+        order: 4;
+    }
+
+    #item-3 {
+        /* The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.*/
+        flex-grow: 3;
+    }
+
+    #item-4 {
+        flex-grow: 6;
+    }
+
+    #item-5 {
+        /* The flex-shrink(small size) property specifies how much a flex item will shrink relative to the rest of the flex items. */
+        flex-shrink: 3;
+    }
+
+    #item-6 {
+        /* The flex-basis property specifies the initial length and height of a flex item. */
+        flex-basis: 280px;
+        /* When flex-direction is set to row, flex-basis will control the width */
+        /* When flex-direction is set to column, flex-basis will control the height */
+
+        /* The flex property is a "shorthand property" for the flex-grow, flex-shrink, and flex-basis properties. */
+        flex: 2 2 230px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Seixth box</div>
+    </div>
+</body>
+
+</html>

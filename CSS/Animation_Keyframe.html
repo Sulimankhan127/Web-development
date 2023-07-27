@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animation and keyframe</title>
+    <style>
+        /* An animation lets an element gradually change from one style to another. */
+        .container {
+            background-color: black;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+
+            /* Specifies the name of the @keyframes at-rule describing an animation's keyframes. */
+            animation-name: Khan;
+
+            /* Specifies the length of time in which an animation completes one cycle. */
+            animation-duration: 2s;
+
+            /* Specifies the number of times an animation should repeat. It can be infinte. */
+            animation-iteration-count: 3;
+
+            /* The animation-delay property specifies a delay for the start of an animation. */
+            animation-delay: 3s;
+
+            /* Specifies whether an animation's first iteration should be forward or backward and whether subsequent iterations should alternate direction on each run through the sequence or reset to the start point and repeat. */
+            animation-direction: alternate;
+
+            /* Specifies how an animation applies styles to its target before and after it runs. */
+            animation-fill-mode: forwards;
+
+            /* Specifies whether to pause or play an animation sequence. */
+            animation-play-state: running;
+
+            /* The animation-timing-function property specifies the speed curve of the animation. " ease" is a default*/
+            animation-timing-function: ease-in;
+            /* "ease-in" Specifies an animation with a slow start and  "ease-out" Specifies an animation with a slow end*/
+            /* "ease-in-out" Specifies an animation with a slow start and end */
+            /* cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function */
+
+            /* shorthand animation */
+            /* The same animation effect as above can be achieved by using the shorthand animation property. */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: khan 3s ease-in-out 2s 4 alternate forwards; */
+        }
+
+        /* @keyframes Khan {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width:400px;
+            }
+        } */
+
+        @keyframes Khan {
+            0% {
+                background-color: green;
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                background-color: red;
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                background-color: yellow;
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                background-color: pink;
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box!!
+        </div>
+    </div>
+
+</body>
+
+</html>

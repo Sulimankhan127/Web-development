@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Link, Butten style</title>
+    <style>
+        /* CSS Links */
+
+        .Container {
+            border: 4px solid blue;
+            background-color: beige;
+            padding: 40px;
+            margin: 40px auto;
+            width: 475px;
+        }
+
+        .btn {
+            border: 2px solid black;
+            background-color: cornflowerblue;
+            padding: 4px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            border-radius: 6px;
+            cursor: pointer;
+            /* The cursor CSS property sets the mouse cursor, if any, to show when the mouse pointer is over an element. */
+        }
+
+        /* Text Decoration */
+        a {
+            /* text-decoration is used to stylish the link e.g underline ,none uperline etc.
+            But mostly used to remove underlines from links*/
+            text-decoration: none;
+        }
+
+        /* Styling Links */
+
+        /* In addition, links can be styled differently depending on what state they are in, and you can change the link style like link(text color, background color, border etc ).
+        The four links states are: */
+
+        a:link {
+            /* A normal, unvisited link */
+            background-color: brown;
+        }
+
+        a:hover {
+            /* A link when the user mouses over it. */
+            background-color: red;
+            color: aliceblue;
+        }
+
+        a:visited {
+            /* A link the user has visited */
+            background-color: rgb(71, 149, 23);
+            border-color: hotpink;
+
+        }
+
+        a:active {
+            /* A link (change thier color) the moment it is clicked */
+            background-color: blue;
+        }
+
+        .btn:hover {
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container" id="para">
+        <h2>This is a link and butten style:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil incidunt nobis iusto minus placeat non,
+            error velit eum deleniti unde sequi fuga tempora sint consequatur maxime ducimus amet quasi, natus, dolorum
+            illo nam! Non ducimus illum saepe perspiciatis perferendis.</p>
+        <a href="https://Google.com" class="btn">Read more</a>
+        <button class="btn"> Contact me</button>
+
+    </div>
+</body>
+
+</html>

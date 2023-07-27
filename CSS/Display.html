@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Display Property</title>
+    <style>
+        /* CSS Dispaly Property */
+        /* Inline element only takes up as much width as necessary. And block element takes up the full width available */
+
+        * {
+            /* With staric means its apply on all ,so i want to bax size all boxis */
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 4px solid red;
+            width: 1000px;
+            margin: auto;
+        }
+
+        img {
+            width: 140px;
+            margin: auto;
+            display: block;
+
+        }
+
+        h2 {
+            text-align: center;
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .Box {
+            /* Display */
+
+            border: 2px solid blue;
+            background-color: bisque;
+            padding: 8px;
+            margin: 6px auto;
+            display: inline-block;
+            /* Display is used to show the box, and "inline-block" represent it in a single line  */
+            width: 340px;
+            box-sizing: border-box;
+            /* It use to keep width same as given in clude with margin and padding. Otherwise it will change with out box sizing*/
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <img src="Montain.jfif" alt="Loading">
+        <h2>
+            Welcome to Khan's Blog
+        </h2>
+    </header>
+    <div class="Box">
+        <div>
+            <h3>Headings</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium rerum ipsam porro magni!
+            </p>
+        </div>
+    </div>
+    <div class="Box">
+        <div>
+            <h3>Headings</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium rerum ipsam porro magni!
+            </p>
+        </div>
+    </div>
+    <div class="Box">
+        <div>
+            <h3>Headings</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium rerum ipsam porro magni!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

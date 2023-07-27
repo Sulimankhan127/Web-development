@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transfom</title>
+    <style>
+        * {
+            /* This will remove the space outside of container and to cover all page. */
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            margin: 31px;
+            padding: -2px;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(45deg); */
+            transition: all 1s ease-in-out;
+        }
+
+        /* Transform property */
+        /* The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements */
+
+        #box1 {
+            /* he rotate() method rotates an element clockwise or counter-clockwise according to a given degree. */
+            transform: rotate(45deg);
+            /* transform: rotateX('angle'); */
+            /* Same for angle Y,Z */
+
+        }
+
+        #box2 {
+            /* The skewX() method skews an element along the X-axis by the given angle. */
+            /* transform: skew(25deg); */
+            /* transform: skewX(45deg); */
+            /* transform: skewY(45deg); */
+            transform: skew(25deg, 23deg);
+            /* For both x and Y */
+        }
+
+        #box3 {
+            /* The scale() method increases or decreases the size of an element (according to the parameters given for the width(X) and height(Y)).as  e.i. 2 time of box. */
+            transform: scale(2);
+            /* transform: scaleX(4); */
+            /* Same for Y,Z axies */
+
+        }
+
+        #box4 {
+            /*  translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis). */
+            transform: translate(12px);
+            transform: translateX(45px);
+            /* Same for Y,Z axies */
+            transform: translate(12px, 13px);
+            /* 12px on X-axis and 13 on Y-axis */
+        }
+
+        #box5:hover {
+            transform: rotate(360deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            This is a box1!
+        </div>
+        <div class="box" id="box2">
+            This is a box2!
+        </div>
+        <div class="box" id="box3">
+            This is a box3!
+        </div>
+        <div class="box" id="box4">
+            This is a box4!
+        </div>
+        <div class="box" id="box5">
+            This is a box5!
+        </div>
+    </div>
+
+</body>
+
+</html>

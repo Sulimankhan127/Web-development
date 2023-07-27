@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Here we discus Box Model, Padding, Border and Margin</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+
+        div {
+            /* CSS Box Model */
+            /* In CSS, the term "box model" is used when talking about design and layout.  */
+            background-color: bisque;
+
+            /* CSS Border */
+            /* A border that goes around the padding and content */
+            border: 4px solid red;
+
+            /* CSS Padding */
+            /* Padding is used to create space around an element's content, inside of any defined borders. 
+            There are properties for setting the padding for each side of an element (top, right, bottom, and left).*/
+            /* padding: 30px; */
+            padding-top: 30px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+
+            /* Shortand Property of Padding*/
+            padding: 30px 25px 39px 40px;
+            /* padding: top right bottom left ; */
+
+            /* CSS Margins */
+            /* Margins are used to create space around elements, outside of any defined borders. 
+            There are properties for setting the padding for each side of an element (top, right, bottom, and left).*/
+            margin: 60px;
+            margin-top: 30px;
+            margin-right: 25px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+
+            /* Shortand Property of Margins */
+            margin: 30px 25px 39px 40px;
+            /* margin: top right bottom left ; */
+
+
+            /* Some other property which are used in this */
+            border-radius: 20px;
+            width: 300px;
+            margin: auto;
+            /* Margin auto is used with width to set the box in center */
+
+            /* The CSS box-sizing property allows us to include the padding and border in an element's
+             total width and height. Simply, it's means that if we set the width of element and then add padding and border to the element,the width will insrease due to padding and border of element. To keep the element width same as given we apply "Box-Sizing" it will keep element  same weather we add padding and border. */
+            box-sizing: border-box;
+
+            /* We can easly set coor, border, margin, padding etc through "inspect" the elements */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>CSS Property:</h2>
+        Explanation of the different parts:
+        Content - The content of the box, where text and images appear
+        Padding - Clears an area around the content. The padding is transparent
+        Border - A border that goes around the padding and content
+        Margin - Clears an area outside the border. The margin is transparent
+    </div>
+
+</body>
+
+</html>

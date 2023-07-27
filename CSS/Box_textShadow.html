@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border: 2px solid black; */
+            background-color: bisque;
+            margin: 12px 12px;
+            padding: 12px 12px;
+
+            /* offset-x | offset-y | color */
+            box-shadow: -12px 13px green;
+            /* The offset-x <length> value specifies the horizontal distance. Negative values place the shadow to the left of the element. */
+            box-shadow: 12px -13px green;
+            /* The offset-y <length> values specifies the vertical distance. Negative values place the shadow above the element. */
+            box-shadow: 12px 13px green;
+            /* Shadow on lower side */
+            box-shadow: -12px -13px green;
+            /* Shadow on upper side bcz of nagative(-)*/
+
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 10px 5px 15px black;
+            /* This is a third <length> value. The larger this value, the bigger the blur, so the shadow becomes bigger and lighter. Negative values are not allowed */
+
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 2px 2px 2px 10px rgba(61, 2, 2, 0.2);
+            /* This is a fourth <length> value. Positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink */
+
+            /* inset | offset-x | offset-y | color */
+            box-shadow: inset 105px 10px gold;
+            /* The presence of the inset keyword changes the shadow to inside the box. Inset shadows are drawn inside the border */
+
+            box-shadow: 12px 13px green, 18px 19px red, -12px -13px yellow;
+            /* You can give a multiple shadow in single line seprated by comma(,) */
+
+        }
+
+        h2 {
+            /* The text-shadow property adds shadow to text. */
+            text-shadow: 5px 7px gray;
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            text-shadow: 5px 7px 4px 2px rgb(46, 10, 10);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is a Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel autem ex at, debitis, pariatur, nisi
+                corporis molestiae excepturi itaque doloribus deserunt! Quia aliquam rem optio delectus unde dicta?
+                Quibusdam, cumque?
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is a Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel autem ex at, debitis, pariatur, nisi
+                corporis molestiae excepturi itaque doloribus deserunt! Quia aliquam rem optio delectus unde dicta?
+                Quibusdam, cumque?
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is a Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel autem ex at, debitis, pariatur, nisi
+                corporis molestiae excepturi itaque doloribus deserunt! Quia aliquam rem optio delectus unde dicta?
+                Quibusdam, cumque?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Navigation Manu</title>
+    <style>
+        .navbar {
+            background-color: green;
+            border-radius: 20px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            /* It is used to remove overflow */
+        }
+
+        .navbar li {
+            float: left;
+            /* It is used to float the list on left side */
+            list-style: none;
+            /* It is used for the list style e.g unorder/order list. */
+            margin: 10px 4px;
+        }
+
+        .navbar li a {
+            padding: 2px 3px;
+            /* pandding from y and x axis */
+            text-decoration: none;
+            color: black;
+        }
+
+        .search {
+            float: right;
+            color: black;
+            padding: 10px 34px;
+
+        }
+
+        .navbar input {
+            border: 2px solid darkgreen;
+            border-radius: 4px;
+            width: 92px;
+        }
+
+        .navbar li a:hover {
+            background-color: darkgreen;
+        }
+
+        .navbar input:hover {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="non">Home</a></li>
+                <li><a href="non">About</a></li>
+                <li><a href="non">Services</a></li>
+                <li><a href="non">Contact us</a></li>
+                <div class="search">
+                    <input type="text" id="search" name="search" placeholder="Search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

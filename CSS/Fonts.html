@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fonts style</title>
+
+    <!-- Below link is used for web fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <style>
+        /* There are three types fonts
+        1- Web safe fonts:( This fonts mostly pre-install in operting system and can be more useable)
+        2- Web fonts:(This fonts are imported from internet )
+        3- Fonts satck:(The font family are stack to use 1st font, if not available then use next one and vice versa. )*/
+
+        p {
+            /* Fonts stack*/
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+            line-height: 1em;
+            /*Line-height is used for sapcing between 2 lines, em is unit same like px*/
+        }
+
+        h3 {
+            /* Web fonts which are imported through link in head section */
+            font-family: 'Playfair', serif;
+        }
+
+        span {
+            /* Web safe fonts are pree install in your sysytem */
+            font-family: cursive;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Fonts Style</h3>
+    <p>Here we discus fonts style.</p>
+    <span> Hello world</span>
+</body>
+
+</html>

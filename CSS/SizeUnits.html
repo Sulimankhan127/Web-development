@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Size Units</title>
+</head>
+<style>
+    html {
+        font-size: 25px;
+    }
+
+    .container {
+        /* It is a parent font size */
+        border: 4px solid black;
+        font-size: 16px;
+        width: 100vw;
+        /* Relative to 1% of the width of the viewport. Viewport is the user's visible area of a web page,and it varies with the device.*/
+        height: 100vh;
+        /* Relative to 1% of the height of the viewport */
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #first {
+        /* It is a child */
+        font-size: 4em;
+        /* 4em meaning 4times the size of parents font. It is relative to the font-size of the parents. */
+        padding: 2em;
+        /* Here "padding: 2em" meaning 2times the size of (font-size:4em) */
+    }
+
+    #second {
+        /* rem is only relative the root(html tag) size. Here 3rem means 3times of (browser/html tag )font size.*/
+        font-size: 3rem;
+        padding: 3rem;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is a first paragraph</h1>
+        <h1 id="second">This is a second paragraph</h1>
+        <h1 id="third">This is a third paragraph</h1>
+    </div>
+
+</body>
+
+</html>
